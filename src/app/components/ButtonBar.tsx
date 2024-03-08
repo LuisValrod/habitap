@@ -13,6 +13,8 @@ import Link from "next/link";
 import { usePathname } from 'next/navigation'
 import { useAppContext } from "../context";
 
+// The button bar is displayed at the bottom of the screen and allows the user to navigate between the list, flower, hive and settings pages.
+
 export default function ButtonBar() {
 
   const currentPage = usePathname();

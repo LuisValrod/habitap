@@ -9,6 +9,7 @@ import supabase from "../../../lib/initSupabase";
 import { ListItemProps } from "../../../types/types";
 import { useAppContext } from "../context";
 
+// Each active list item is a habit that the user has committed to. It has a checkbox that the user can tick to indicate that they have completed the habit for the day which will add an entry to their habit_log. If the user has already ticked the checkbox, a popup will appear to inform them that they have already completed the habit for the day.
 
 const ActiveListItem: React.FC<ListItemProps> = ({ children, todo}) => {
 
